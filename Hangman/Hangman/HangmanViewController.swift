@@ -8,7 +8,10 @@
 
 import UIKit
 
-class PlayScreenViewController: UIViewController {
+class HangmanViewController: UIViewController {
+    
+    var hangmanWord: String!
+    var hiddenWord: String!
     
     @IBOutlet weak var blankSpaceLabel: UILabel!
        @IBOutlet weak var textField: UITextField!
@@ -16,6 +19,7 @@ class PlayScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        blankSpaceLabel.text = "\(hiddenWord)"
         // Do any additional setup after loading the view.
     }
     
